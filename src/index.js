@@ -30,7 +30,9 @@ app.use('/api', ApiRouter); // if any req comes with url starting with /api
 
 app.get('/ping', (req, res) => {
     return res.json({
-        message: 'pong....'
+        message: 'pong....',
+        name: 'Shopcart',
+        version: '1.0.0'
     })
 });
 
